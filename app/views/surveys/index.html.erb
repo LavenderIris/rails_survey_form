@@ -1,0 +1,24 @@
+<div>
+	<form action='/add_user/' method='post'>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  	Your Name <input type='text' name='name'/> <br>
+  	Dojo Location
+  	<select name='location'>
+	  <option value="San Jose">San Jose</option>
+	  <option value="New York">New York</option>
+	  <option value="Seattle">Seattle</option>
+	  <option value="Austin">Austin</option>
+	</select><br>
+	Language
+	<select name='language'>
+	  <option value="C++">C++</option>
+	  <option value="Python">Python</option>
+	  <option value="JavaScript">JavaScript</option>
+	  <option value="Java">Java</option>
+	</select><br>
+	Comment(Optional) <br>
+	<textarea name=comment></textarea> <br>
+  	<input type='submit' value='Create' />
+</form>
+
+</div>
